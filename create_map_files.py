@@ -69,7 +69,7 @@ subfolder should contain only image files.''')
 
     # Ensure specified files/directories exist
     assert os.path.exists(args.input_dir),
-        'Input directory {} does not exist'.format(i)
+        'Input directory {} does not exist'.format(args.input_dir)
     assert (args.frac_test < 1.0) and (args.frac_test >= 0.0),
         'Require 0 <= f < 1'
     if not os.path.exists(args.output_dir):
