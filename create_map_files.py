@@ -73,6 +73,6 @@ subfolder should contain only image files.''')
     assert (args.frac_test < 1.0) and (args.frac_test >= 0.0),
         'Require 0 <= f < 1'
     if not os.path.exists(args.output_dir):
-        os.makedirs(args.output_prefix)
+        os.makedirs(args.output_dir)
 
     main(args.input_dir, args.output_dir, args.frac_test)
